@@ -3,12 +3,18 @@ import React from 'react';
 function App() {
 
   const pop = () => {
-    alert("pop goes the weasel!")
+    alert("Pop goes the weasel!")
   }
 
   return (
     <React.Fragment>
-    <button onClick={}>Press me</button>
+    <button style={{
+      backgroundColor: "yellow",
+      color: "black",
+      margin: "10px",
+      width: "200px",
+      height: "100px"
+    }} onClick={pop}>Press me</button>
     </React.Fragment>
   );
 }
