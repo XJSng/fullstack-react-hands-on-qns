@@ -13,7 +13,9 @@ export default function Dice() {
         display: "inline-block"
     }}>
         {diceResult}
-        <br /><button onClick={() => rollDice(Math.floor(Math.random() * 6) + 1)}>Roll the Dice</button>
+        <div>
+        <button onClick={() => rollDice(Math.floor(Math.random() * 6) + 1)}>Roll the Dice</button>
+        </div>
     </div>
 }
 

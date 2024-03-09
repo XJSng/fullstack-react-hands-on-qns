@@ -4,15 +4,15 @@ import DisplayMessage from './DisplayMessage';
 export default function App () {
   const [message, setMessage] = useState('');
 
-  const coffeeMessage = () => {
+  const dispenseCoffee = () => {
     setMessage('Dispensing coffee');
   };
 
-  const teaMessage = () => {
+  const dispenseTea = () => {
     setMessage('Dispensing tea');
   };
 
-  const orangeJuiceMessage = () => {
+  const dispenseOrangeJuice = () => {
     setMessage('Dispensing orange juice');
   };
 
@@ -23,9 +23,9 @@ export default function App () {
         <div className="display">
           <DisplayMessage message={message}/>
         </div>
-        <button onClick={coffeeMessage}>Coffee</button>
-        <button onClick={teaMessage}>Tea</button>
-        <button onClick={orangeJuiceMessage}>Orange Juice</button>
+        <button onClick={dispenseCoffee}>Coffee</button>
+        <button onClick={dispenseTea}>Tea</button>
+        <button onClick={dispenseOrangeJuice}>Orange Juice</button>
       </React.Fragment>
     );
   
