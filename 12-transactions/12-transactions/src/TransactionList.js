@@ -31,8 +31,25 @@ export default function TransactionList() {
         ]
     )
 
-    return <React.Fragment>
+    const transactionsType = (t)=>{
+        if (t.type == "debit") {
+            return "green"
+        } else {
+            return "red"
+        }
+    }
 
+
+    return <React.Fragment>
+<h1>Transactions:</h1>
+<ul>
+    {transactions.map((t)=>{
+        return <li style={{
+        color: t.type == "debit" ? "green" : "red",
+        listStyle: "none"
+        }}>{t.name}: {t.amount}</li>
+    })}
+</ul>
     </React.Fragment>
   
 }
